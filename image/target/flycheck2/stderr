@@ -1,0 +1,63 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.628618754s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint: stale: changed "/home/karki/hermit/boot-image/image/kernel/src/scheduler/load_calculate.rs"
+   0.628632870s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint:           (vs) "/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/debug/.fingerprint/hermit-kernel-38892756ed12aef7/dep-lib-hermit"
+   0.628635645s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1784583202, nanos: 24683130 } < FileTime { seconds: 1784585933, nanos: 971642906 }
+   0.629038708s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint: fingerprint dirty for boot_image v0.1.0 (/home/karki/hermit/boot-image/image)/Check { test: false }/TargetInner { name: "boot_image", doc: true, ..: with_path("/home/karki/hermit/boot-image/image/src/main.rs", Edition2021) }
+   0.629050159s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(75) }
+   0.631287286s  INFO prepare_target{force=false package_id=hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel) target="hermit"}: cargo::core::compiler::fingerprint: fingerprint dirty for hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel)/Check { test: false }/TargetInner { ..: lib_target("hermit", ["lib"], "/home/karki/hermit/boot-image/image/kernel/src/lib.rs", Edition2024) }
+   0.631299549s  INFO prepare_target{force=false package_id=hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel) target="hermit"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(76) }
+   0.636329059s  INFO prepare_target{force=false package_id=hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karki/hermit/boot-image/image/kernel/build.rs", Edition2024) }
+   0.636351962s  INFO prepare_target{force=false package_id=hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel) target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: PrecalculatedComponentsChanged { old: "1784583201.026373373s (src/scheduler/mod.rs)", new: "1784585933.971642906s (src/scheduler/load_calculate.rs)" }
+   0.642264981s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint: fingerprint error for boot_image v0.1.0 (/home/karki/hermit/boot-image/image)/Check { test: true }/TargetInner { name: "boot_image", doc: true, ..: with_path("/home/karki/hermit/boot-image/image/src/main.rs", Edition2021) }
+   0.642280320s  INFO prepare_target{force=false package_id=boot_image v0.1.0 (/home/karki/hermit/boot-image/image) target="boot_image"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/debug/.fingerprint/boot_image-3f3841791b371370/test-bin-boot_image`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: <&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync>
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{closure#0}
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/48cc71ee88cd0f11217eced958b9930970da998b/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at /usr/src/debug/glibc/glibc/csu/../sysdeps/nptl/libc_start_call_main.h:74:7
+  25: call_init
+             at /usr/src/debug/glibc/glibc/csu/../csu/libc-start.c:142:43
+  26: __libc_start_main_impl
+             at /usr/src/debug/glibc/glibc/csu/../csu/libc-start.c:347:5
+  27: <unknown>
+   Compiling hermit-kernel v0.13.0 (/home/karki/hermit/boot-image/image/kernel)
+    Checking boot_image v0.1.0 (/home/karki/hermit/boot-image/image)
+error: could not compile `boot_image` (bin "boot_image" test) due to 1 previous error

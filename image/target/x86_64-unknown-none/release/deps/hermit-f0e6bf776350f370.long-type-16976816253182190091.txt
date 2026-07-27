@@ -1,0 +1,6 @@
+lock_api::mutex::Mutex<RawInterruptMutex<RawTicketMutex>, SchedulerInput>
+&'static lock_api::mutex::Mutex<RawInterruptMutex<RawTicketMutex>, SchedulerInput>
+PhantomData<&'static lock_api::mutex::Mutex<RawInterruptMutex<RawTicketMutex>, SchedulerInput>>
+alloc::raw_vec::RawVec<&'static lock_api::mutex::Mutex<RawInterruptMutex<RawTicketMutex>, SchedulerInput>>
+Vec<&'static lock_api::mutex::Mutex<RawInterruptMutex<RawTicketMutex>, SchedulerInput>>
+lock_api::mutex::Mutex<spinning_top::spinlock::RawSpinlock<spinning_top::relax::Backoff>, Vec<&'static lock_api::mutex::Mutex<RawInterruptMutex<RawTicketMutex>, SchedulerInput>>>

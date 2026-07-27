@@ -1,0 +1,12 @@
+/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/release/deps/volatile-d3ae0fab4d914b99.d: /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/lib.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/access.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/mod.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/macros.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/operations.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ref.rs
+
+/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/release/deps/libvolatile-d3ae0fab4d914b99.rlib: /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/lib.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/access.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/mod.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/macros.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/operations.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ref.rs
+
+/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/release/deps/libvolatile-d3ae0fab4d914b99.rmeta: /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/lib.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/access.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/mod.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/macros.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/operations.rs /home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ref.rs
+
+/home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/lib.rs:
+/home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/access.rs:
+/home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/mod.rs:
+/home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/macros.rs:
+/home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ptr/operations.rs:
+/home/karki/.cargo/git/checkouts/volatile-ac455d2d62943c88/6e288f1/src/volatile_ref.rs:

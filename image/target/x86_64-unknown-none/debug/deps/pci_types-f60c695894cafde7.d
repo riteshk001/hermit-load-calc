@@ -1,0 +1,10 @@
+/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/debug/deps/pci_types-f60c695894cafde7.d: /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/lib.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/mod.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/msi.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/msix.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/device_type.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/register.rs
+
+/home/karki/hermit/boot-image/image/target/x86_64-unknown-none/debug/deps/libpci_types-f60c695894cafde7.rmeta: /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/lib.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/mod.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/msi.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/msix.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/device_type.rs /home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/register.rs
+
+/home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/lib.rs:
+/home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/mod.rs:
+/home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/msi.rs:
+/home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/capability/msix.rs:
+/home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/device_type.rs:
+/home/karki/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pci_types-0.10.1/src/register.rs:

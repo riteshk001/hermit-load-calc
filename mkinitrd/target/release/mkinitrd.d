@@ -1,0 +1,1 @@
+/home/karki/hermit/boot-image/mkinitrd/target/release/mkinitrd: /home/karki/hermit/boot-image/mkinitrd/src/create.rs /home/karki/hermit/boot-image/mkinitrd/src/list.rs /home/karki/hermit/boot-image/mkinitrd/src/main.rs /home/karki/hermit/boot-image/mkinitrd/src/ramdisk.rs
