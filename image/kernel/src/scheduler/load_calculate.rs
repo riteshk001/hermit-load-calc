@@ -46,33 +46,13 @@ fn calc_load(avg_fixed: U53F11, active_tasks: U53F11, exp: U53F11) -> U53F11 {
 
 impl LoadAvg {
 	fn update(&mut self, active_tasks: u32) {
-		// let active = FixedU64::<U23>::from_num(active_tasks);
-		// let one = FixedU64::<U23>::from_num(1u32);
-		//       // Maybe constants get converrted at compile time? 
-		// let exp_1 = FixedU64::<U23>::from_num(EXP_1);
-		// let exp_5 = FixedU64::<U23>::from_num(EXP_5);
-		// let exp_15 = FixedU64::<U23>::from_num(EXP_15);
 		let active: U53F11 = U53F11::from_num(active_tasks);
-		// let one: U53F11 = U53F11::from_num(1u32);
         // Maybe constants get converrted at compile time? 
+
 		let exp_1: U53F11 = U53F11::from_num(EXP_1);
 		let exp_5: U53F11 = U53F11::from_num(EXP_5);
 		let exp_15: U53F11 = U53F11::from_num(EXP_15);
 
-		// self.avg_1_fixed = FixedU64::mul(self.avg_1_fixed, &exp_1)
-		// 	.add(FixedU64::mul(one.sub(exp_1), active));
-		// self.avg_5_fixed = FixedU64::mul(self.avg_5_fixed, &exp_5)
-		// 	.add(FixedU64::mul(one.sub(exp_5), active));
-		// self.avg_15_fixed = FixedU64::mul(self.avg_15_fixed, &exp_15)
-		// 	.add(FixedU64::mul(one.sub(exp_15), active));
-
-        // self.avg_1_fixed = self.avg_1_fixed * exp_1
-        //     + (FixedU64::from_num(1.0) - exp_1) * FixedU32::from_num(active_tasks);
-        // self.avg_5_fixed = self.avg_5_fixed * exp_5
-        //     + (FixedU64::from_num(1.0) - exp_5) * FixedU32::from_num(active_tasks);
-        // self.avg_15_fixed = self.avg_15_fixed * exp_15
-        //     + (FixedU64::from_num(1.0) - exp_15) * FixedU32::from_num(active_tasks);
-        
         self.avg_1_fixed = calc_load(self.avg_1_fixed, active, exp_1);
         self.avg_5_fixed = calc_load(self.avg_5_fixed, active, exp_5);
         self.avg_15_fixed = calc_load(self.avg_15_fixed, active, exp_15);
